@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
 using namespace std;
 
 int main() {
@@ -6,8 +8,8 @@ int main() {
 	while(t--){
 
         long long int s,v;cin>>s>>v;
-        long int t = 2*s/(3*v);
+        double t = (double)(2*s)/(double)(3*v);
         if(s!=0 && t==0){cout << "0.000001\n";}
-	    else cout << t << endl;
-    }
+	    else printf("%.6lf\n",t);
+   }
 }
